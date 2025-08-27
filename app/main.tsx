@@ -1,6 +1,6 @@
 "use client";
 import axios from "axios";
-import React, { useState } from "react";
+import { useState } from "react";
 
 const API_KEY = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
 

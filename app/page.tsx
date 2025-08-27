@@ -1,10 +1,10 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import HeroComponent from "./hero";
 import usePlaylist from "./main";
 
 export default function Page() {
-  const {
+    const {
     playlistId,
     setPlaylistId,
     totalDuration,
@@ -13,6 +13,12 @@ export default function Page() {
     secondsToRealTime,
     basicDetails,
   } = usePlaylist();
+
+  useEffect(() => {
+  if (playlistId) {
+    handleFindPlaylistLength();
+  }
+}, [playlistId]);
 
   const [url, setUrl] = useState<string>("");
 
@@ -67,6 +73,7 @@ export default function Page() {
             <p className="text-sm text-gray-400">
               By {basicDetails.creator} • {basicDetails.totalVideos} videos
             </p>
+            <p className="text-sm text-gray-400">Playlist Id: {playlistId}</p>
           </div>
         )}
 
