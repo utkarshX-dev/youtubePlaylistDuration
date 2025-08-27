@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "YouTube Playlist Duration Calculator | Utkarsh",
+    title: "YouTube Playlist Duration",
     description:
       "Easily calculate total YouTube playlist duration and details.",
     images: [
