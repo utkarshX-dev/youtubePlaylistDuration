@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   creator: "Utkarsh Bhandari",
   metadataBase: new URL("https://youtube-playlist-duration-steel.vercel.app"),
   openGraph: {
-    title: "YouTube Playlist Duration Calculator | Utkarsh",
+    title: "YouTube Playlist Duration Calculator",
     description:
       "Paste any YouTube playlist URL and get total duration, creator info, and playback estimates at different speeds.",
     url: "https://youtube-playlist-duration-steel.vercel.app",
